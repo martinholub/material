@@ -9,7 +9,7 @@ Monday 11.00-11.45 (Y11-J-05)
 
 ## Lecturers
 
-[Ms. Gosia Nowicka](https://www.researchgate.net/profile/Malgorzata_Nowicka), finished PhD student, [IMLS](http://www.imls.uzh.ch/index.html), UZH  
+[Mr. Lukas Weber](https://twitter.com/lmwebr), final year PhD student, [IMLS](http://www.imls.uzh.ch/index.html), UZH  
 
 [Dr. Hubert Rehrauer](http://www.fgcz.ch/the-center/people/rehrauer.html), Group Leader of Genome Informatics at [FGCZ](http://www.fgcz.ch/)  
 
@@ -34,7 +34,7 @@ Monday 11.00-11.45 (Y11-J-05)
 | 20.11.2017  | Mark  | edgeR+friends 2  | [High Dimensional Classification with combined Adaptive Sparse PLS and Logistic Regression-link](https://www.ncbi.nlm.nih.gov/pubmed/28968879) (TF, YY) | [BSmooth: from whole genome bisulfite sequencing reads to differentially methylated regions](https://genomebiology.biomedcentral.com/articles/10.1186/gb-2012-13-10-r83) (SO) | 
 | 27.11.2017  | Hubert  | classification  | [Bayesian approach to single-cell differential expression analysis](http://www.nature.com/nmeth/journal/v11/n7/abs/nmeth.2967.html) (UJ) | [Guidance for RNA-seq co-expression network construction and analysis: safety in numbers](https://www.ncbi.nlm.nih.gov/pubmed/25717192) (CS) | 
 | 04.12.2017  | Mark  | single-cell  | [Removal of batch effects using distribution-matching residual networks](https://academic.oup.com/bioinformatics/article/33/16/2539/3611270/Removal-of-batch-effects-using-distribution) (MH, SG)  |  | 
-| 11.12.2017  | Gosia  | hands-on session #2: mass cytometry  | X | X | 
+| 11.12.2017  | Lukas  | hands-on session #2: mass cytometry  | X | X | 
 | 18.12.2017  | Mark  | epigenomics, DNA methylation, ChIP data, gene set analysis  | [Linear models enable powerful differential activity analysis in massively parallel reporter assays](https://www.biorxiv.org/content/early/2017/09/30/196394) (DP, ZY)  |  | 
 
 
