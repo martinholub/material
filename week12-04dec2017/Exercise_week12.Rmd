@@ -1,0 +1,31 @@
+---
+title: "Exercise 12: dimension reduction in single-cell datasets"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## scRNA-seq exercise
+
+Download one of the scRNA-seq datasets (use the 'Download .rds' button) from the [conquer database](http://imlspenticton.uzh.ch:3838/conquer/); keep in mind that the larger the number of cells, the larger the file will be.  Also, it may be more interesting to pick a dataset where you can see reasonably distinct cell subtypes/subsets, so you may want to first click in the 'scater report' link for a dataset and look through some of the dimension reduction plots.
+
+After downloading, read the dataset into R (use 'readRDS') and understand the format of the data that you get (Note: there is a 'Tutorial' tab on the main conquer page that contains useful information).  You may also want to check the corresponding QC metrics from conquer; for example, click on the 'MultiQC report' links to see more details for your dataset.
+
+```{r read_rds, eval=FALSE}
+d <- readRDS("myfile.rds")
+class(d)
+```
+
+You should get a 'MultiAssayExperiment' object.  Note: if you haven't already, you'll need to install a package of the same name.
+
+The overall goal here is to transform, filter, explore and project in low dimensions a single-cell RNA-seq dataset down to 2 or 3 dimensions. 
+
+Here is a potential pipeline: extract the count table, compute the counts per million (e.g., using column sums), transform the data with a 'log(eps+cpm)' where eps is a number between 1 and 20, filter out low variance genes (I suggest looking at a variance-mean plot and retaining 200-500 genes with the highest variance on the log-transformed scale)  and then using a method (e.g., tSNE, diffusion maps, PCA) to project the data down to 2 or 3 dimensions.  When you make the low-dimensional project, colour the points (cells) according to the label given in the metadata to see whether you've been successful in differentiating the different conditions/cell types.
+
+There is not a single way to do this, but the hope is that any good low-dimensional projection allows you to recapture biological features of the data.
+
+(Optional #1) Pick two of the cell types within the dataset you chose and try and find marker genes that distinguish between them.  For example, you could use a 'wilcox.test' in R to test the difference.  Highlight just this set of genes for the two sets of cells in a heatmap.
+
+(Optional #2) Using your clustering algorithm of choice, cluster the cells into the number of cell types from your chosen dataset.  Calculate the F1 score for each true cell type.  Calculate also the adjusted rand index.
