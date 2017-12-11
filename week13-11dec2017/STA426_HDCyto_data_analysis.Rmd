@@ -66,9 +66,11 @@ Then continue by following the steps in the main workflow script "cytofWorkflow.
 
 Perform a "null comparison" using code and data from the CyTOF workflow.
 
-–  e.g. 4 vs. 4 comparison of "Reference" samples only
-–  modify inputs to the differential testing / plotting functions and re-run the analysis
-–  what do we expect? what do the results show?
+-  e.g. 4 vs. 4 comparison of "Reference" samples only
+-  modify inputs to the differential testing / plotting functions and re-run the analysis
+-  what do we expect? what do the results show?
+
+Write up the results in a short report containing visualizations, results, and interpretation.
 
 
 
