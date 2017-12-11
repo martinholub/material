@@ -1,0 +1,74 @@
+---
+title: "STA426 lesson materials: High-dimensional cytometry data analysis (11 Dec 2017)"
+author: "Lukas M. Weber"
+date: "12/10/2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Introduction
+
+See slides.
+
+- What is high-dimensional cytometry?
+- Automated data analysis
+- Nowicka et al. (2017): CyTOF workflow for differential discovery in high-dimensional cytometry data sets
+- Bioconductor
+
+
+
+# Install Bioconductor
+
+```{r}
+source("https://bioconductor.org/biocLite.R")
+biocLite()
+```
+
+
+
+# Download and install workflow package
+
+The CyTOF data analysis workflow (Nowicka et al., 2017) is available for download as a "workflow package" from the Bioconductor website.
+
+It can be installed as follows:
+
+```{r}
+source("https://bioconductor.org/workflows.R")
+workflowInstall("cytofWorkflow")
+```
+
+
+
+# Data import
+
+Notes:
+
+- Description of BCR-XL data set: see Bioconductor workflow
+- Explanation of .fcs files
+- Preprocessing: normalization, de-barcoding, compensation, removal of dead cells and doublets
+
+
+Check working directory:
+
+```{r}
+getwd()
+```
+
+
+Then continue by following the steps in the main workflow script "cytofWorkflow.R".
+
+
+
+# Exercise
+
+Perform a "null comparison" using code and data from the CyTOF workflow.
+
+–  e.g. 4 vs. 4 comparison of "Reference" samples only
+–  modify inputs to the differential testing / plotting functions and re-run the analysis
+–  what do we expect? what do the results show?
+
+
+
